@@ -4,6 +4,7 @@ import {
 	UserIcon,
 	WalletIcon,
 	CurrencyDollarIcon,
+	RocketLaunchIcon,
 } from '@heroicons/react/24/outline'
 
 const BottomNav = () => {
@@ -31,17 +32,22 @@ export default BottomNav
 
 const links = [
 	{
-		label: 'My Profile',
+		label: 'Home',
 		href: '/dashboard',
 		icon: <UserIcon className='h-5 w-5 text-indigo-600' />,
 	},
 	{
-		label: 'Embedded Wallet',
-		href: '/embedded-wallet',
-		icon: <WalletIcon className='h-5 w-5 text-indigo-600' />,
+		label: 'Clankers',
+		href: '/clankers',
+		icon: <RocketLaunchIcon className='h-5 w-5 text-indigo-600' />,
 	},
+	// {
+	// 	label: 'Embedded Wallet',
+	// 	href: '/embedded-wallet',
+	// 	icon: <WalletIcon className='h-5 w-5 text-indigo-600' />,
+	// },
 	{
-		label: 'Load Assets',
+		label: 'Your Assets',
 		href: '/load-assets',
 		icon: <CurrencyDollarIcon className='h-5 w-5 text-indigo-600' />,
 	},
